@@ -6,7 +6,7 @@
 /*   By: yyefimov <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/06 14:58:42 by yyefimov          #+#    #+#             */
-/*   Updated: 2017/02/15 13:41:34 by yyefimov         ###   ########.fr       */
+/*   Updated: 2017/02/15 13:57:46 by yyefimov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,7 +144,6 @@ void	formatting_digits(char **print, int precision, int widht, char *flags)
 		space_plus(print, plus, 0, zero);
 	else if (plus == '+' || space == ' ')
 		space_plus(print, plus, space, zero);
-	printf("%print = s\n", *print);
 }
 
 void	formatting(t_pf **begin_list)
