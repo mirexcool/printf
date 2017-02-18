@@ -6,7 +6,7 @@
 #    By: yyefimov <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/18 16:09:48 by yyefimov          #+#    #+#              #
-#    Updated: 2017/02/18 16:28:06 by yyefimov         ###   ########.fr        #
+#    Updated: 2017/02/18 16:29:32 by yyefimov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror -c
 
 SRC =	*.c
+
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
