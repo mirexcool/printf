@@ -6,7 +6,7 @@
 #    By: yyefimov <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/18 16:09:48 by yyefimov          #+#    #+#              #
-#    Updated: 2017/02/18 16:14:06 by yyefimov         ###   ########.fr        #
+#    Updated: 2017/02/18 16:34:22 by yyefimov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,31 +16,7 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror -c
 
-SRC =	ft_itoa_long.c\
-		formatting_cs.c\
-		final_print.c\
-		formats_spdio.c\
-		to_formatting.c\
-		ft_bzero.c\
-		to_flags.c\
-		ft_atoi.c\
-		formatting.c\
-		ft_printf.c\
-		ft_strcat.c\
-		get_flags.c\
-		ft_itoa_unsigned.c\
-		ft_strchr.c\
-		ft_strnew.c\
-		ft_putstr.c\
-		ft_strsub.c\
-		ft_strdup.c\
-		make_cast.c\
-		ft_strcmp.c\
-		ft_strjoin.c\
-		formats_uxc.c\
-		get_s.c\
-		ft_strlen.c\
-		join_wide.c\
+SRC =	*.c
 
 OBJ = $(SRC:.c=.o)
 
