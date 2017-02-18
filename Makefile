@@ -46,7 +46,7 @@ OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(SRC)
 		clear
 		@$(CC) -c $(SRC) $(CFLAGS) 
 		@ar rc $(NAME) $(OBJ)
