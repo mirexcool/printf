@@ -6,7 +6,7 @@
 /*   By: yyefimov <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/17 18:45:47 by yyefimov          #+#    #+#             */
-/*   Updated: 2017/02/18 14:45:27 by yyefimov         ###   ########.fr       */
+/*   Updated: 2017/02/18 16:02:10 by yyefimov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,9 @@ char	*cast_type(char c, va_list args, char *lenght, char sharp)
 	if (c == 'd' || c == 'i')
 		res = get_d(args, lenght);
 	if (c == 'c' || c == 'C')
-		res = (lenght[0] == 'l') ? get_c(args, 0, 'C') : get_c(args, 0, c);
+		res = get_c(args, 0, 'c');
+	else if (lenght[0] == 'l') 
+		get_c(args, 0, 'C');
 	if (c == 'X' || c == 'x')
 		res = get_x(args, lenght, c);
 	if (c == 'o')
